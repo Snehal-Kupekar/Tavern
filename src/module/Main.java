@@ -50,6 +50,8 @@ public class Main {
 		
 		List<String> getavailableHotelList = service.searchHotel(combination,beds);
 		
+		if(getavailableHotelList==null)
+			System.out.println("No rooms found");
 		
 		//printing available hotel with combination and beds
 		for(String s : getavailableHotelList)
